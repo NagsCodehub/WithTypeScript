@@ -1,4 +1,4 @@
-module demo_02_05
+module demo_primitive
 {
     var data:any;
      var info;
@@ -18,7 +18,8 @@ module demo_02_05
      var hasHair=!!isBald();
 
      // string array
-
+      var firstName:string='Nag';
+      var lastName = 'kar';
      function getArrayLength(x:string[])
      {
          var len:number=x.length;
@@ -30,10 +31,5 @@ module demo_02_05
      var firstPerson =names[0];
 
      console.log(getArrayLength(names));
-
-
-
-
-
 
 }

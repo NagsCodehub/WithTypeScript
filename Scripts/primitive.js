@@ -1,5 +1,5 @@
-var demo_02_05;
-(function (demo_02_05) {
+var demo_primitive;
+(function (demo_primitive) {
     var data;
     var info;
     var dosomething = function (arg) {
@@ -13,4 +13,14 @@ var demo_02_05;
     var isReady = true;
     var isBald = function () { return 'yes'; };
     var hasHair = !!isBald();
-})(demo_02_05 || (demo_02_05 = {}));
+    // string array
+    var firstName = 'Nag';
+    var lastName = 'kar';
+    function getArrayLength(x) {
+        var len = x.length;
+        return len;
+    }
+    var names = ['Nag', 'Dat', 'Sri', 'Ven'];
+    var firstPerson = names[0];
+    console.log(getArrayLength(names));
+})(demo_primitive || (demo_primitive = {}));

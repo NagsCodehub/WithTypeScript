@@ -12,6 +12,15 @@
  tsc -w <filepath_name>
 
 
+ To  install and  use lite-server 
+
+  npm install -g lite-server
+
+ To run the app just type  lite-server in command prompt 
+
+
+
+
  Visual Studio 2013/17 on my machine already had old version of typescript and it is causing
 the compiler from Visual Studio code terminal to pick old version of typescript,to fix it follow below.
 
