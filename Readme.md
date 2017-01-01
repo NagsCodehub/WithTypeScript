@@ -12,8 +12,8 @@
  tsc -w <filepath_name>
 
 
-Had an issue with Visual Studio 2013/17 on my machine already had typescript and it is causing
-the compiler to pick ols version of typescript,to fix it follow below.
+ Visual Studio 2013/17 on my machine already had old version of typescript and it is causing
+the compiler from Visual Studio code terminal to pick old version of typescript,to fix it follow below.
 
 If you only need the last version of TypeScript, on both Visual Studios and Visual Studio Code, then you can
 
