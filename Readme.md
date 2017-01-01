@@ -18,7 +18,11 @@
 
  To run the app just type  lite-server in command prompt 
 
+debugging TypeScript
 
+Debuggin in VisualStudio can be enabled with source map files in web essentials
+
+Tools -> options -> WebEssentials -> TypeScript and set GenerateSourceMap option to true
 
 
  Visual Studio 2013/17 on my machine already had old version of typescript and it is causing
