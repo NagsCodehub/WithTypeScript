@@ -23,4 +23,14 @@ var demo_primitive;
     var names = ['Nag', 'Dat', 'Sri', 'Ven'];
     var firstPerson = names[0];
     console.log(getArrayLength(names));
+    //null examples
+    var casiosales = null;
+    var keyboard = null;
+    var ordedate = null;
+    //undefined
+    var quantity;
+    var company;
+    console.log("undefined examples");
+    console.log(quantity);
+    console.log(company);
 })(demo_primitive || (demo_primitive = {}));
