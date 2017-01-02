@@ -44,4 +44,38 @@ module demo_interfaces
  var msg=p.greet('Hello New Year');
  console.log(msg);
 
-}
+ interface SessionEval
+ {
+   addRating:(rating :number) => void;
+   calcRating :()=>number;
+ }
+
+ function sessionEvaluator(): SessionEval {
+     var ratings:number[]=[];
+     var addRating =(rating: number =5) => { ratings.push(rating); };
+
+     var calcRating = () =>{
+         var sum: number=0;
+         ratings.forEach(function(score){
+             sum+=score;
+         });
+         return sum/ratings.length;
+
+     };
+
+     return{
+         addRating:  addRating,
+         calcRating: calcRating
+     }
+
+ }
+
+ var s =sessionEvaluator();
+    s.addRating(4);
+    s.addRating(5);
+    s.addRating(7);
+    console.log(s.calcRating());
+
+ }
+
+

@@ -18,4 +18,27 @@ var demo_interfaces;
     console.log(newage);
     var msg = p.greet('Hello New Year');
     console.log(msg);
+    function sessionEvaluator() {
+        var ratings = [];
+        var addRating = function (rating) {
+            if (rating === void 0) { rating = 5; }
+            ratings.push(rating);
+        };
+        var calcRating = function () {
+            var sum = 0;
+            ratings.forEach(function (score) {
+                sum += score;
+            });
+            return sum / ratings.length;
+        };
+        return {
+            addRating: addRating,
+            calcRating: calcRating
+        };
+    }
+    var s = sessionEvaluator();
+    s.addRating(4);
+    s.addRating(5);
+    s.addRating(7);
+    console.log(s.calcRating());
 })(demo_interfaces || (demo_interfaces = {}));
